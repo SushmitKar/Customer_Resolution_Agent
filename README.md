@@ -73,7 +73,7 @@ in the sidebar.
 │   ├── bookings.json    # Data Pack §2 — transcribed exactly
 │   └── rules.json       # Data Pack §3 + §4 — transcribed exactly
 └── docs/
-    ├── expected_behavior.md   # Scenario test cases incl. out-of-policy traps
+    ├── expected_behaviour.md   # Scenario test cases incl. out-of-policy traps
     ├── assumptions.md         # Inputs, sources, assumptions
     └── architecture.md        # Detailed architecture & process flow
 ```
@@ -88,7 +88,7 @@ in the sidebar.
 | Meher Kaur (Platinum) | SK-305 delayed 6h | Full night's hotel + ₹2,000 fare difference waived | Grants hotel covering delayed hours only (not a full night). She may move flights but pays the ₹2,000; waiving >₹1,500 requires supervisor → escalates. |
 
 Full expected outcomes, with rule citations:
-[`docs/expected_behavior.md`](docs/expected_behavior.md)
+[`docs/expected_behaviour.md`](docs/expected_behaviour.md)
 
 ---
 

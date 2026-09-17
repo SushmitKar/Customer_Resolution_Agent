@@ -1,4 +1,4 @@
-# Expected Behavior — Scenario Test Cases
+# Expected Behaviour — Scenario Test Cases
 
 Each scenario includes a deliberate out-of-policy request. Correct behavior is defined strictly by the Data Pack service rules.
 
