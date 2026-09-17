@@ -1,0 +1,24 @@
+{
+  "SK4821X": {
+    "customer": "Priya Nair",
+    "loyalty_tier": "Gold",
+    "flights": [
+      {"flight": "SK-204", "route": "Delhi to Goa", "date": "Wed 23 Sep 2026", "scheduled_departure": "18:40", "status": "Cancelled (operational reasons)"},
+      {"flight": "Return", "route": "Goa to Delhi", "date": "Fri 25 Sep 2026", "scheduled_departure": "16:20", "status": "Unaffected"}
+    ]
+  },
+  "TR1190B": {
+    "customer": "Arvind Kulkarni",
+    "loyalty_tier": "Silver",
+    "flights": [
+      {"flight": "SK-118", "route": "Mumbai to Bengaluru", "date": "Wed 23 Sep 2026", "scheduled_departure": "07:10", "status": "Delayed 4h (new departure 11:10)", "delay_hours": 4}
+    ]
+  },
+  "WL7742": {
+    "customer": "Meher Kaur",
+    "loyalty_tier": "Platinum",
+    "flights": [
+      {"flight": "SK-305", "route": "Delhi to Hyderabad", "date": "Wed 23 Sep 2026", "scheduled_departure": "14:00", "status": "Delayed 6h (new departure 20:00)", "delay_hours": 6}
+    ]
+  }
+}

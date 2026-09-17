@@ -1,0 +1,20 @@
+{
+  "SK4821X": {
+    "name": "Priya Nair",
+    "loyalty_tier": "Gold",
+    "contact": "priya.nair@example.com, +91-98xxxxxxx1",
+    "travel_history": "6 flights in last 12 months, 1 prior complaint (delayed baggage, resolved with voucher)"
+  },
+  "TR1190B": {
+    "name": "Arvind Kulkarni",
+    "loyalty_tier": "Silver",
+    "contact": "arvind.kulkarni@example.com, +91-98xxxxxxx2",
+    "travel_history": "3 flights in last 12 months, no prior complaints"
+  },
+  "WL7742": {
+    "name": "Meher Kaur",
+    "loyalty_tier": "Platinum",
+    "contact": "meher.kaur@example.com, +91-98xxxxxxx3",
+    "travel_history": "10 flights in last 12 months, 1 prior complaint (overbooking, resolved with a tier-status upgrade)"
+  }
+}
