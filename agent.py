@@ -1,16 +1,18 @@
 """Agent orchestrator: LLM handles conversation; guardrails handle policy."""
 import os
-
+from dotenv import load_dotenv
 from openai import OpenAI
 
 import guardrails as G
 from tools import TOOL_SCHEMAS, execute_tool
 
+load_dotenv()
+
 client = OpenAI(
     api_key=os.environ.get("GEMINI_API_KEY", ""),
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
 )
-MODEL = "gemini-2.0-flash"
+MODEL = "gemini-3.5-flash"
 
 SYSTEM_PROMPT = """You are an airline Customer Resolution Agent. Today is Wednesday, 23 September 2026.
 
