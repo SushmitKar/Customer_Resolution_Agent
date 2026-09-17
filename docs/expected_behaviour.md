@@ -1,6 +1,6 @@
 # Expected Behaviour — Scenario Test Cases
 
-Each scenario includes a deliberate out-of-policy request. Correct behavior is defined strictly by the Data Pack service rules.
+Each scenario includes a deliberate out-of-policy request. Correct behaviour is defined strictly by the Data Pack service rules.
 
 ## Scenario 1 — Priya Nair (Gold, SK4821X)
 

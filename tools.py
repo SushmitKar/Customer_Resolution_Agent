@@ -42,7 +42,7 @@ def _ok(customer, action, params, message, rule, escalation=False):
             "message": message, "rule_cited": rule}
 
 
-# ---------------- Tool implementations ----------------
+# --Tool implementations --
 
 def lookup_booking(booking_ref: str):
     b = _booking(booking_ref)
@@ -162,7 +162,7 @@ def escalate_to_human(booking_ref: str, reason: str):
                "Prohibited actions list / escalation policy", escalation=True)
 
 
-# ---------------- Tool schemas (OpenAI function-calling format) ----------------
+# -- Tool schemas (OpenAI function-calling format) --
 
 TOOL_SCHEMAS = [
     {"type": "function", "function": {"name": "lookup_booking", "description": "Look up a customer's booking, flight status and loyalty tier by booking reference (PNR).", "parameters": {"type": "object", "properties": {"booking_ref": {"type": "string"}}, "required": ["booking_ref"]}}},

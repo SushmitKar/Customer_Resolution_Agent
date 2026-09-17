@@ -14,13 +14,13 @@ written to an append-only audit trail with the exact rule cited.
 
 ### 1. Install dependencies
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ### 2. Set your API key
 
 Create a `.env` file in the project root:
 
-GEMINI_API_KEY=your_key_here
+`GEMINI_API_KEY=your_key_here`
 
 (Or set it as an environment variable: `set GEMINI_API_KEY=your_key` on
 Windows CMD / `export GEMINI_API_KEY=your_key` on Mac/Linux.)
@@ -29,7 +29,7 @@ Windows CMD / `export GEMINI_API_KEY=your_key` on Mac/Linux.)
 
 ### 3. Run
 
-streamlit run app.py
+`streamlit run app.py`
 
 The app opens in your browser. Type as the customer; watch the audit trail
 update live in the sidebar.
@@ -37,7 +37,7 @@ update live in the sidebar.
 ---
 
 ## Architecture
-
+```
 Chat UI (Streamlit)
       │
 Agent Orchestrator (LLM + system prompt: service rules + tone)
@@ -45,12 +45,13 @@ Agent Orchestrator (LLM + system prompt: service rules + tone)
 Policy / Guardrail Engine  ← deterministic Python checks
       │
 Tools + Audit Log (audit_log.jsonl — append-only)
+```
 
 **Key design decision:** the LLM never decides policy limits.
 
 - `arrange_hotel()` refuses any delay ≤ 5 hours
 - `grant_lounge_access()` refuses any delay ≤ 3 hours
-- `waive_fare_difference()` refuses amounts above ₹1,500 → forces supervisor escalation
+- `process_fare_difference()` refuses amounts above ₹1,500 → forces supervisor escalation
 - `initiate_refund()` is hard-coded to the original payment method, 7 business days
 - Legal-action / formal-complaint keywords trigger escalation deterministically, before the LLM even responds
 
@@ -75,7 +76,8 @@ in the sidebar.
 └── docs/
     ├── expected_behaviour.md   # Scenario test cases incl. out-of-policy traps
     ├── assumptions.md         # Inputs, sources, assumptions
-    └── architecture.md        # Detailed architecture & process flow
+    ├── architecture.md        # Detailed architecture & process flow
+    └── ai_tools_used.md       # List and explanation of AI tools used
 ```
 ---
 
